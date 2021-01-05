@@ -17,7 +17,7 @@ if(navigator.geolocation)
     {
         long=position.coords.longitude;
         lat=position.coords.latitude;
-        const api=`${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=17e7244f7199ae6d115a344f8012d9d2`
+        const api=`${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=`+key;
         
         fetch(api).then((response)=>
         {
