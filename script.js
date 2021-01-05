@@ -32,8 +32,33 @@ if(navigator.geolocation)
                 loc.textContent=name;
                 climate.textContent=main;
                 tempvalue.textContent=Math.round(feels_like-273);
-            }
-            )
+                console.log(data);
+                if (id<300 && id>200)
+                {
+                    tempvalue.src="thunderstorm.png";
+                }
+                else if (id<400 && id>300)
+                {
+                    tempvalue.src="cloud.png";
+                }
+                else if (id<600 && id>500)
+                {
+                    tempvalue.src="rain.png";
+                }
+                else if (id<700 && id>600)
+                {
+                    tempvalue.src="atmosphere.png";
+                }
+                else if (id<800 && id>700)
+                {
+                    tempvalue.src="cloud.png";
+                }
+                if (id==800)
+                {
+                    tempvalue.src="sun.png";
+                }
+
+                })
     }
     )}
 }
