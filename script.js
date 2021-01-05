@@ -35,7 +35,7 @@ if(navigator.geolocation)
                 console.log(data);
                 if (id<300 && id>200)
                 {
-                    tempvalue.src="thunderstorm.png";
+                    tempvalue.src="thunderstorm.svg";
                 }
                 else if (id<400 && id>300)
                 {
@@ -43,15 +43,15 @@ if(navigator.geolocation)
                 }
                 else if (id<600 && id>500)
                 {
-                    tempvalue.src="rain.png";
+                    tempvalue.src="rain.svg";
                 }
                 else if (id<700 && id>600)
                 {
-                    tempvalue.src="atmosphere.png";
+                    tempvalue.src="atmosphere.svg";
                 }
                 else if (id<800 && id>700)
                 {
-                    tempvalue.src="cloud.png";
+                    tempvalue.src="clouds-and-sun.svg";
                 }
                 if (id==800)
                 {
