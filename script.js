@@ -31,29 +31,30 @@ const getWeather=async(city)=>
                 loc.textContent=name;
                 climate.textContent=main;
                 tempvalue.textContent=Math.round(feels_like-273);
+                console.log(weatherData);
                 if (id<300 && id>200)
                 {
-                    tempicon.src="thunderstorm.svg";
+                    tempicon.src="thunderstorm.svg"
                 }
                 else if (id<400 && id>300)
                 {
-                    tempicon.src="cloud-and-sun.svg";
+                    tempicon.src="cloud-and-sun.svg"
                 }
                 else if (id<600 && id>500)
                 {
-                    tempicon.src="rain.svg";
+                    tempicon.src="rain.svg"
                 }
                 else if (id<700 && id>600)
                 {
-                    tempicon.src="atmosphere.svg";
+                    tempicon.src="atmosphere.svg"
                 }
                 else if (id<800 && id>700)
                 {
-                    tempicon.src="clouds-and-sun.svg";
+                    tempicon.src="clouds-and-sun.svg"
                 }
-                if (id==800)
+                if (id>=800)
                 {
-                    tempicon.src="snow.svg";
+                    tempicon.src="snow.svg"
                 }
             })
     }
@@ -90,27 +91,27 @@ if(navigator.geolocation)
                 console.log(data);
                 if (id<300 && id>200)
                 {
-                    tempvalue.src="thunderstorm.svg";
+                    tempicon.src="thunderstorm.svg"
                 }
                 else if (id<400 && id>300)
                 {
-                    tempvalue.src="cloud.png";
+                    tempicon.src="clouds-and-sun.svg"
                 }
                 else if (id<600 && id>500)
                 {
-                    tempvalue.src="rain.svg";
+                    tempicon.src="rain.svg"
                 }
                 else if (id<700 && id>600)
                 {
-                    tempvalue.src="atmosphere.svg";
+                    tempicon.src="atmosphere.svg"
                 }
                 else if (id<800 && id>700)
                 {
-                    tempvalue.src="clouds-and-sun.svg";
+                    tempicon.src="clouds-and-sun.svg"
                 }
                 if (id==800)
                 {
-                    tempvalue.src="sun.png";
+                    tempicon.src="snow.svg"
                 }
 
                 })
