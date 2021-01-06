@@ -5,7 +5,7 @@ let climate=document.getElementById("climate");
 let iconfile;
 const searchInput=document.getElementById("search-input");
 const searchButton=document.getElementById("search-button");
-const proxy="https://cors-anywhere.herokuapp.com/";
+//const proxy="https://cors-anywhere.herokuapp.com/";
 
 searchButton.addEventListener("click",(e)=>
 {
@@ -18,7 +18,7 @@ const getWeather=async(city)=>
 {
     try
     {
-        const api1=`${proxy}api.openweathermap.org/data/2.5/weather?q=${city}&appid=`+key;
+        const api1=`api.openweathermap.org/data/2.5/weather?q=${city}&appid=`+key;
         fetch(api1).then((response)=>
         {
             return response.json();
@@ -73,7 +73,7 @@ if(navigator.geolocation)
     {
         long=position.coords.longitude;
         lat=position.coords.latitude;
-        const api=`${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=`+key;
+        const api=`api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=`+key;
         
         fetch(api).then((response)=>
         {
