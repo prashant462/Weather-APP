@@ -11,7 +11,7 @@ searchButton.addEventListener("click",(e)=>
 {
     e.preventDefault();
     getWeather(searchInput.value);
-    searchInput.value="";
+    //searchInput.value="";
 
 })
 const getWeather=async(city)=>
